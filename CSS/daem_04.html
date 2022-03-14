@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>选择器</title>
+	<style>
+		#p1{
+			<!-- id选择器 -->
+			color: red;
+		}
+		#p2{
+			color: aqua;
+		}
+		
+		par{
+			color: green;
+		}
+		.cur{
+			color: yellow;
+		}
+		
+		.box1 ul li{
+			color: red;
+		}
+
+		.box2 ul li{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<!--
+	id 其实就是标签的身份证号, 具有唯一性
+	规定了 一个页面中不能有同名属性
+	
+	id和class属性的命名规范: 第一个字符必须式字母
+	-->
+	<p id="p1">第一段文字: id选择器</p>
+	<p id="p2">第二段文字: id选择器</p>
+	<p>第三段文字: id选择器</p>
+	
+	<p class="par">第一段文字: class选择器</p>
+	<!--
+		class属性值可以有一个或者多个
+	-->
+	<p class="par cur">第二段文字: class选择器</p>
+	<p class="par">第三段文字: class选择器</p>
+	
+	<!--
+	通配符选择器: 练习当中使用的多一些
+		*{
+			color: blue;
+		}
+	-->
+	<p>第一段文字: 通配符*选择器</p>
+	<p>第二段文字: 通配符*选择器</p>
+	<p>第三段文字: 通配符*选择器</p>
+	
+	<div class="box1">
+		<ul>
+			<li>后代选择器: box1的li</li>
+			<li>后代选择器: box1的li</li>
+		</ul>
+	</div>
+	<div class="box2">
+		<ul>
+			<li>后代选择器: box2的li</li>
+			<li>后代选择器: box2的li</li>
+		</ul>
+	</div>
+	
+	<!--
+	交集选择器: p.par.cur  使用点的方式, 参考<p class="par cur">
+	并集选择器: div,p	   使用逗号连接的方式, 共同选择.  比较灵活,使用逗号分隔,选择多个标签
+	-->
+</body>
+</html>

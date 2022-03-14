@@ -1,0 +1,88 @@
+<!DOCTYPR html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>表格-上</title>
+	
+	<style>
+		table{
+			margin: auto;
+		}
+		td{
+			width: 80px;
+			height: 60px;
+			<!-- 文本居中 -->
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 
+		border是设置表格边框的, 
+		第二个属性是css样式, 用来合并表格
+	-->
+	<table border="1" style="border-collapse:collapse">
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+		</tr>
+		<tr>
+			<td>第1行,第1列</td>
+			<td>第1行,第2列</td>
+			<td>第1行,第3列</td>
+			<td>第1行,第4列</td>
+		</tr>
+		<tr>
+			<td>第2行,第1列</td>
+			<td>第2行,第2列</td>
+			<td>第2行,第3列</td>
+			<td>第2行,第4列</td>
+		</tr>
+		<tr>
+			<td>第3行,第1列</td>
+			<td>第3行,第2列</td>
+			<td>第3行,第3列</td>
+			<td>第3行,第4列</td>
+		</tr>
+	</table>
+	
+	<table border="1" style="border-collapse:collapse">
+	<!-- 
+		rowspan上下跨行合并 
+		colspan左右跨列合并 
+	-->
+		<tr>
+			<td colspan="2">1</td>
+			<td rowspan="2">2</td>
+			<td colspan="3">3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td rowspan="2">5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td rowspan="2">9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td rowspan="2">11</td>
+			<td>12</td>
+			<td colspan="2">13</td>
+			<td rowspan="3">14</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>16</td>
+			<td>17</td>
+			<td colspan="2">18</td>
+		</tr>
+	</table>
+</body>
+
+</html>

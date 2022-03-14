@@ -1,0 +1,90 @@
+<!DOCTYPR html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>form表单-上</title>
+	
+</head>
+
+<body>
+	<form action="">
+		<p>
+			<!-- 
+			输入框:
+			value: 输入框中默认字符
+			placeholder: 占位符
+			-->
+			用户名: <input type="text" placeholder="admin">
+		</p>
+			<!--
+			密码框:
+			type="password"  显示效果, 掩码显示
+			-->
+		<p>
+			密 &nbsp; 码: <input type="password" placeholder="admin">
+		</p>
+		<p>
+			<!--
+			单选框:
+			type="radio"
+			实现单选按钮的互斥: 需要设置name属性
+			-->
+			性 &nbsp; 别:
+			<input type="radio" name="six">男
+			<input type="radio" name="six">女
+		</p>
+		<p>
+			<!--
+			复选框:
+			多选框通过type="checkbox"设置, 可以选一个或者多选, 建议用一组设置
+			
+			单选或者多选有个默认选择功能 checked
+			
+			使用label标签扩大复选框的选择范围
+			-->
+			<label>
+				<input type="checkbox" name='hobby' checked="checked">运动
+			</label>
+			<label>
+				<input type="checkbox" name='hobby'>绘画
+			<label>	
+				<input type="checkbox" name='hobby'>音乐
+			</label>
+			<label>
+				<input type="checkbox" name='hobby'>阅读
+			</label>
+			<label>
+				<input type="checkbox" name='hobby'>其他
+			</label>
+		</p>
+		<p>
+			<!--
+			textarea:					是一个双标签, 是文本级标签
+			placeholder					显示效果, 占位符
+			rows:           			显示行数
+			cols:           			当前行显示的字节, 以英文显示为准
+			style="resize:none"			style显示样式的属性
+			-->
+			自我介绍:
+			<textarea cols="30" rows="3" placeholder="来个自我介绍" style="resize:none"></textarea>
+		</p>
+		<p>
+			<!--
+			配合ajax学习:
+				select:
+					selected: 默认选择项属性
+				option:
+			-->
+			籍贯:
+			<select>
+				<option>北京</option>
+				<option selected="selected">河北</option>
+				<option>天津</option>
+			</select>
+		</p>
+	</form>
+</body>
+
+</html>
