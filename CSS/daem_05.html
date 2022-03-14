@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>继承与层叠</title>
+	<!-- 
+	Inherited from 继承性: .box继承div
+	
+	选择器的权重: id选择器 > class类名选择器 > 标签选择器
+	不同数量id选择器,多的获胜, 
+	不同数量的class选择器,数量多的获胜,
+	选择器数量相同, 后写的覆盖先写的
+	-->	
+	<style>
+		.box{
+			color: red;
+			background: purple;
+		}
+		.par{
+			font-size: 20px;
+		}
+		#par{
+			/* 添加文字下划线 */
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<ul>
+			<li>文字</li>
+		</ul>
+	</div>
+	
+	<p class="par" id="par">
+		文字
+	</p>
+</body>
+</html>
