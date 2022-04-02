@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="https://www.360.cn/favicon.ico">
+</head>
+<body>
+
+
+<form action="http://127.0.0.1:8801/" method="post" enctype="multipart/form-data">
+    <p>姓名：<input type="text" name="user" value="xusx"></p>
+    <p>密码：<input type="password" name="=pwd" value="123"></p>
+    <hr>
+    <p>
+        兴趣：
+        篮球<input type="checkbox" name="hobby" value="lanqiu" id="">
+        足球<input type="checkbox" name="hobby" value="zuqiu" id="" checked="checked">
+        台球<input type="checkbox" name="hobby" value="taiqiu" id="">
+
+    </p>
+    <p>
+        性别：
+        男   <input type="radio" name="gender" value="1" id="">
+        女   <input type="radio" name="gender" value="2" id="">
+        其他 <input type="radio" name="gender" value="3" id="">
+    </p>
+    <p>
+        出生日期：
+        <input type="date" name="bir_data">
+    </p>
+    <p>
+        <input type="hidden" name="token" value="1qaz2wsx" id="">
+    </p>
+    <p>
+        <!--一定加属性：enctype="multipart/form-data"-->
+        <!--<input type="file" name="put_file" id="">-->
+    </p>
+    <hr>
+    籍贯
+    <p>
+        <select name="pro" id="" multiple="multiple" size="2">
+            <option value="hebei">河北</option>
+            <option value="henan">河南</option>
+            <option value="shandong">山东</option>
+        </select>
+    </p>
+    <hr>
+    <p>
+        个人简介
+        <textarea name="person" id="" cols="80" rows="10"></textarea>
+    </p>
+    
+    
+    <input type="submit">
+    
+</form>
+
+
+</body>
+</html>
